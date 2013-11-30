@@ -14,7 +14,9 @@ function welcome(){
 $('#welcome').show();
 }
 
-$('.icon').draggable();
+$('.icon').draggable({
+	containment: "parent",
+});
 
 $(document).mouseup(function (e)
 {
@@ -31,6 +33,9 @@ $('#instagram_icon').click(function(){
 	$(this).attr("src", "images/instagram_h.png");
 });
 
+$('#instagram_icon').dblclick(function(){
+	window.open("http://instagram.com/pulkitjaiswal",'_blank');
+});
 $(document).mouseup(function (e)
 {
     var container = $("#instagram_icon");
@@ -44,6 +49,10 @@ $(document).mouseup(function (e)
 
 $('#location_icon').click(function(){
 	$(this).attr("src", "images/location_h.png");
+});
+
+$('#location_icon').dblclick(function(){
+	window.open("http://foursquare.com/pulkitjaiswl",'_blank');
 });
 
 $(document).mouseup(function (e)
@@ -61,6 +70,10 @@ $('#blog_icon').click(function(){
 	$(this).attr("src", "images/blog_h.png");
 });
 
+$('#blog_icon').dblclick(function(){
+	window.open("http://pulkitjaiswal.com",'_blank');
+});
+
 $(document).mouseup(function (e)
 {
     var container = $("#blog_icon");
@@ -76,6 +89,9 @@ $('#email_icon').click(function(){
 	$(this).attr("src", "images/email_h.png");
 });
 
+$('#email_icon').dblclick(function(){
+	window.open("mailto:pulkit@garuda.io");
+});
 $(document).mouseup(function (e)
 {
     var container = $("#email_icon");
@@ -89,6 +105,10 @@ $(document).mouseup(function (e)
 
 $('#github_icon').click(function(){
 	$(this).attr("src", "images/github_h.png");
+});
+
+$('#github_icon').dblclick(function(){
+	window.open("http://github.com/pulkitjaiswal",'_blank');
 });
 
 $(document).mouseup(function (e)
@@ -106,6 +126,10 @@ $('#linkedin_icon').click(function(){
 	$(this).attr("src", "images/linkedin_h.png");
 });
 
+$('#linkedin_icon').dblclick(function(){
+	window.open("http://linkedin.com/in/pulkitjaiswal",'_blank');
+});
+
 $(document).mouseup(function (e)
 {
     var container = $("#linkedin_icon");
@@ -115,4 +139,12 @@ $(document).mouseup(function (e)
     {
         $('#linkedin_icon').attr("src", "images/linkedin.png");
     }
+});
+
+$('.open #apple-menu-icon').attr("src",'images/apple-logo_h.png');
+
+$(function() {
+    var BV = new $.BigVideo();
+    BV.init();
+    BV.show('http://vimeo.com/8977355/download?t=1385794044&v=14750424&s=cfc0f7e19125a85c163d981f35856419');
 });

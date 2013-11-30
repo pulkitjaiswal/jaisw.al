@@ -1,9 +1,9 @@
 *{
-font-family: 'VT323', cursive;
+font-family: 'Anonymous Pro', sans-serif;
 }
 
 body{
-background: url(../images/bg.jpg);
+background: #000;
 }
 
 .container{
@@ -46,7 +46,7 @@ top: 50%;
 margin-top: -100px;
 left: 50%;
 margin-left: -250px;
-font-family: 'VT323', cursive;
+font-family: 'Anonymous Pro', sans-serif;
 font-weight: bold;
 font-size: 20px;
 padding-left: 50px;
@@ -66,11 +66,12 @@ border-bottom: 1px solid #000;
 }
 
 #mac-menu .nav>li{
-margin-right: 8px;
+width: 45px;
+text-align: center;	
 }
 #mac-menu .navbar-nav>li>a{
 padding: 4px;
-font-family: 'VT323', cursive;
+font-family: 'Anonymous Pro', sans-serif;
 color: #000;
 font-weight: bold;
 }
@@ -82,24 +83,26 @@ color: #fff;
 
 #mac-menu .dropdown-menu{
 border: 1px solid #000;
-width: 150px;
+width: 200px;
 }
 
 #mac-menu .dropdown-menu>li>a {
 padding-left: 10px;
+text-align: left;
 }
 #mac-menu .dropdown-menu>li>a:hover{
 background-color: #000;
 color: #fff;
 }
 
-.open > a{
-background-color: #000;
+.open>a{
+background-color: #000 !important;
+color: #fff !important;
 }
 
 #icons{
 text-align: center;
-width: 80px;
+width: 100px;
 float: right;
 }
 
@@ -117,4 +120,3 @@ color: #000;
 .icon_title:hover, .icon_title:focus{
 text-decoration: none;
 }
-
